@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+// html,
+// body {
+//   height: 100%;
+// }
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: $xlarge-width;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  &.container--email-grab {
+    padding: 32px 10px;
+  }
+}
+
+.section {
+  background-size: cover;
+  background-position: center center;
+  background-color: $white;
+
+  &.section--full-height {
+    height: 100vh;
+    min-height: 600px;
+  }
+
+  &.section--landing {
+    background-image: url(../images/bg-index.jpg);
+    background-color: $dark-gray;
+  }
+}
