@@ -108,3 +108,16 @@ select {
     outline-offset: $focus-outline-offset;
   }
 }
+
+.input {
+  &.input--underline {
+    border: none;
+    border-bottom: 1px solid $black;
+    box-shadow: none;
+    border-radius: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

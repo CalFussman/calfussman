@@ -1,5 +1,24 @@
+@font-face {
+    font-family: "Frutiger";
+    src: url("../fonts/FrutigerRoman.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Frutiger";
+    src: url("../fonts/FrutigerBold.woff") format("woff");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Frutiger";
+    src: url("../fonts/FrutigerLight.woff") format("woff");
+    font-weight: 300;
+}
+
+
 // Typography
-$base-font-family: 'Open Sans', sans-serif;
+$base-font-family: "Frutiger", Arial, Helvetica, Verdana, Tahoma, sans-serif;
 $heading-font-family: $base-font-family;
 
 // Line height
@@ -19,11 +38,12 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
+$blue: #289ed8;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 $white: #fff;
+$black: $dark-gray;
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -48,4 +68,4 @@ $base-duration: 150ms;
 $base-timing: ease;
 
 // Include Media
-$breakpoints: (small: $small-width, medium: $medium-width, large: $large-width);
+$breakpoints: (small: $small-width, medium: $medium-width, large: $large-width, xlarge: $xlarge-width);

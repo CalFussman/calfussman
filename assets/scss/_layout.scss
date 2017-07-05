@@ -19,12 +19,8 @@ body {
 
 .container {
   max-width: $xlarge-width;
-  padding: 0 10px;
+  padding: 0 16px;
   margin: 0 auto;
-
-  &.container--email-grab {
-    padding: 32px 10px;
-  }
 }
 
 .section {
@@ -35,10 +31,5 @@ body {
   &.section--full-height {
     height: 100vh;
     min-height: 600px;
-  }
-
-  &.section--landing {
-    background-image: url(../images/bg-index.jpg);
-    background-color: $dark-gray;
   }
 }
