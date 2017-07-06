@@ -115,6 +115,7 @@ select {
     border-bottom: 1px solid $black;
     box-shadow: none;
     border-radius: 0;
+    background-color: transparent;
 
     &:focus {
       box-shadow: none;

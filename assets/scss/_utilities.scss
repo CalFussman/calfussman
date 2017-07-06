@@ -5,3 +5,13 @@
    height: 0;
    clear: both;
 }
+
+.slider-btn {
+    display: inline-block;
+    margin: .5em;
+    // cursor: pointer;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: $white;
+}

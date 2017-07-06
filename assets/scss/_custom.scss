@@ -29,7 +29,7 @@
     .index-header__book {
         float: right;
         padding: 24px 16px 14px;
-        background-color: $blue;
+        background-color: rgba(255, 255, 255, .3);
         border-radius: 16px;
         margin-top: -12px;
         letter-spacing: 1px;
@@ -42,7 +42,6 @@
 }
 
 .section--landing {
-
     background-image: url(../images/bg-index.jpg);
     background-color: $dark-gray;
     padding-top: 60px;
@@ -83,7 +82,7 @@
     
     .section--landing__nav {
         position: absolute;
-        bottom: 0;
+        bottom: 16px;
         left: 0;
         right: 0;
         background-color: rgba(255, 255, 255, .3);
@@ -118,23 +117,276 @@
 }
 
 .section--email-grab {
+    background-image: url(../images/bg-contact.jpg);
+    background-size: cover;
+
     .section--email-grab__container {
-        padding: 32px 10px;
+        padding: 24px 16px;
+
+        @include media("<medium") {
+            text-align: center;
+        }
 
         p {
             font-size: 20px;
             font-style: italic;
+            color: $white;
+
+            @include media("<xlarge") {
+                font-size: 18px;
+            }
+
+
+            @include media("<medium") {
+                text-align: center;
+            }
+            
+        }
+
+        .section--email-grab__container__contact-form {
+            margin-top: 10px;
+
+            @include media("<xlarge") {
+                text-align: right;
+            }
+
+            @include media("<medium") {
+                text-align: center;
+            }
         }
 
         .input--signup__label {
-            font-weight: 400;
-            font-size: 14px;
-            display:inline-block;
+            display: inline;
+
+            @include media("<medium") {
+                display: block;
+            }
+
+            p {
+                display: inline;
+                font-weight: 400;
+                font-size: 14px;
+                color: $white;
+            }
 
             .input--signup {
-                display: inline-block;
-                width: 60%;
+                display: inline;
+                width: 290px;
+                max-width: 100%;
+                border-color: $white;
+                color: $white;
+
+                @include media("<xlarge") {
+                    width: 220px;
+                }
+
+                @include media("<large") {
+                    width: 180px;
+                }
+
+                @include media("<medium") {
+                    width: 200px;
+                }
             }
+        }
+
+        input[type="submit"] {
+            margin-left: 16px;
+        }
+    }
+}
+
+.section--experience {
+    background-image: url(../images/bg-video.jpg);
+    background-size: cover;
+    background-position: center bottom;
+
+    .section--experience__container {
+        padding-top: 15%;
+        text-align: center;
+
+        @include media("<medium") {
+            padding-top: 40%;
+        }
+
+        #video-play {
+            cursor: pointer;
+        }
+
+        .section--experience__container__play {
+            width: 500px;
+            max-width: 80%;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            color: $white;
+            text-transform: uppercase;
+            font-size: 32px;
+            text-shadow: 1px 3px 6px rgba(0,0,0,0.4);
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.section--question {
+    background-image: url(../images/bg-companies.jpg);
+    background-size: cover;
+    background-position: top;
+    min-height: 100vh !important;
+    height: inherit !important;
+
+    .section--question__container {
+        color: $white;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        @include media("<medium") {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+
+        .text {
+            margin: 0 auto;
+            margin-bottom: 100px;
+
+            @include media(">medium") {
+            }
+
+            h2 {
+                font-size: 38px;
+            }
+            
+            p {
+                font-size: 28px;
+            }
+        }
+
+        .break {
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .logos {
+            margin: 0 auto;
+            margin-bottom: 50px;
+            
+            .logo {
+                margin-bottom: 48px;
+                vertical-align: middle;
+                text-align: center;
+            }
+        }
+
+        .book {
+            text-align: center;
+        }
+    }
+}
+
+.section--cal-question {
+    background-image: url(../images/bg-fb.jpg);
+    background-position: left bottom;
+
+    .section--cal-question__container {
+        text-align: center;
+        color: $white;
+        padding-top: 17%;
+
+        @include media("<medium") {
+            padding-top: 25%;
+        }
+
+        h1 {
+            font-size: 48px;
+
+            @include media("<medium") {
+                font-size: 36px;
+            }
+        }
+        p {
+            max-width: 75%;
+            margin: 0 auto 24px;
+            font-size: 20px;
+
+            @include media("<medium") {
+                font-size: 16px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 48px;
+            }
+        }
+
+        @include media(">large") {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.section--podcast {
+    height: inherit !important;
+    min-height: 500px;
+
+    .section--podcast__container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+
+        .section--podcast__left {
+           padding: 80px 48px 0;
+
+            @include media(">large") {
+                padding: 64px 64px 0;
+            }
+
+            @include media(">xlarge") {
+                padding: 12% 120px 0;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 12px;
+
+                @include media(">large") {
+                    font-size: 26px;
+                     margin-bottom: 36px;
+                 }
+
+                &.right {
+                    text-align: right;
+                }
+            }
+
+            .listen {
+                text-align: center;
+                margin-bottom: 32px;
+            }
+        }
+
+        .section--podcast__right {
+            position: relative;
+            @include media(">medium") {
+                &:before {
+                    content: " ";
+                    background-image: url(../images/plus.png);
+                    position: absolute;
+                    width: 80px;
+                    height: 80px;
+                    background-size: 100%;
+                    right: calc(100% - 60px);
+                    top: calc(50% - 40px);
+                }
+            }
+        }
+
+        .section--podcast__img {
+            width: 100%;
+            object-fit: cover;
         }
     }
 }

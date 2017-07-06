@@ -29,49 +29,110 @@ permalink: /
 <section class="section section--email-grab">
     <div class="container section--email-grab__container">
         <div class="grid">
-            <div class="grid__col grid__col--2-of-8">
+            <div class="grid__col grid__col--2-of-8 grid__col--m-1-of-1">
                 <p>Are you ready to discover your true question?</p>
             </div>
-            <div class="grid__col grid__col--6-of-8">
+            <div class="grid__col grid__col--6-of-8 grid__col--m-1-of-1 section--email-grab__container__contact-form">
                 <label for="id_firstname" class="input--signup__label">
-                    First Name* <input type="text" name="firstname" id="id_firstname" class="input input--underline input--signup">
+                    <p>First Name*</p>
+                    <input type="text" name="firstname" id="id_firstname" class="input input--underline input--signup">
                 </label>
                 <label for="id_email" class="input--signup__label">
-                    Email* <input type="email" name="email" id="id_email" class="input input--underline input--signup">
+                    <p>Email*</p>
+                    <input type="email" name="email" id="id_email" class="input input--underline input--signup">
                 </label>
+                <input type="submit" value="Let's Go" class="btn btn--primary">
             </div>
         </div>
         
     </div>
 </section>
 <section class="section section--full-height section--experience">
-    <div class="container">
-        <p>Experience it now...have a video overlay here</p>
+    <div class="container section--experience__container">
+        <div id="video-play">
+            <img class="section--experience__container__play" src="{{ "/assets/images/play-button.png" | relative_url }}" alt="Play Video">
+            <h2>Experience it now</h2>
+        </div>
+        <!--<iframe src="https://player.vimeo.com/video/221646209" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
     </div>
 </section>
-<section class="section section--full-height section--storytelling">
-    <div class="container">
-        <p>Leadership thrives through great storytelling.</p>
+<section class="section section--full-height section--question">
+    <div class="container section--question__container">
+        <div class="text">
+            <h2>The Question is the Answer</h2>
+            <p>After 20 years of interviewing the world’s most influential people, I’ve learned that the question is the answer. Whether you want better leadership, stronger relationships or deeper communication, I’m here to help you understand that curiosity and storytelling are the keys to your success.</p>
+        </div>
+        <div class="break">
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+        </div>
+        <div class="grid logos">
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/fb.png" | relative_url }}" alt="Facebook">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/pixar.png" | relative_url }}" alt="Pixar">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/gm.png" | relative_url }}" alt="General Motors">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/apple-music.png" | relative_url }}" alt="Apple Music">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/samsung.png" | relative_url }}" alt="Samsung">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/turner.png" | relative_url }}" alt="Turner">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/vans.png" | relative_url }}" alt="Vans">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/lululemon.png" | relative_url }}" alt="Lululemon">
+            </div>
+            <div class="logo grid__col grid__col--push-1-of-4 grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/georgetown.png" | relative_url }}" alt="Georgetown">
+            </div>
+            <div class="logo grid__col grid__col--1-of-4 grid__col--m-2-of-4 grid__col--s-1-of-2">
+                <img src="{{ "/assets/images/logos/ucla.png" | relative_url }}" alt="UCLA">
+            </div>
+        </div>
+        <div class="book">
+            <a href="#" class="btn btn--negative btn--big">Book Cal to Speak at Your Event</a>
+        </div>
     </div>
 </section>
-<section class="section section--full-height section--companies">
-    <div class="container">
-        <p>Cal's speeches and workshops will uniquely fulfill your needs. Each event will be custom-tailored to your theme.</p>
-        <div class="logos">Logos go here</div>
-        <button>Book Cal to Speak at Your Event</button>
+<section class="section section--quotes">
+    <div class="container section--quotes__container">
     </div>
 </section>
 <section class="section section--full-height section--cal-question">
-    <div class="container">
-        <h1>We literally have people using the term Cal Question...</h1>
-        <p>Quote goes here</p>
-        <button>Read more testimonials</button>
+    <div class="container section--cal-question__container">
+        <h1>"We literally have people using the term <i>Cal Question</i>.</h1>
+        <p>‘What Cal Question will we use to get to the understanding we need?’</p>
+        <p>He has become part of our culture.”</p>
+        <p>Chris Sanders, Facebook</p>
+        <a href="#" class="btn btn--big">Read More Testimonials</a>
     </div>
 </section>
-<section class="section section--full-height section--listen">
-    <div class="container">
-        <div>image goes on left side</div>
-        <p>Cal's speeches...</p>
-        <button>Listen</button>
+<section class="section section--full-height section--podcast">
+    <div class="container section--podcast__container">
+        <div class="grid">
+            <div class="section--podcast__left grid__col grid__col--1-of-2 grid__col--m-1-of-1">
+                <p>“When I told my podcast listeners that I was doing a second interview with Cal, dozens replied with some variation of “Please just let Cal talk for 3 hours. I could listen to him tell stories forever.” </p>
+                <p class="right">– Tim Ferriss</p>
+                <div class="listen"><a href="#" class="btn btn--negative btn--big">Listen</a></div>
+            </div>
+            <div class="section--podcast__right grid__col grid__col--1-of-2 grid__col--m-1-of-1">
+                <img class="section--podcast__img" src="{{ "/assets/images/cal-tim.jpg" | relative_url }}" alt="Cal & Tim">
+            </div>
+        </div>
     </div>
 </section>
+
+<script>
+
+</script>
