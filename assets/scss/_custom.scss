@@ -337,7 +337,7 @@
 
 .section--podcast {
     height: inherit !important;
-    min-height: 500px;
+    min-height: inherit !important;
 
     .section--podcast__container {
         width: 100%;
@@ -352,7 +352,7 @@
             }
 
             @include media(">xlarge") {
-                padding: 12% 120px 0;
+                padding: 10% 120px 0;
             }
 
             p {
@@ -394,6 +394,7 @@
         .section--podcast__img {
             width: 100%;
             object-fit: cover;
+            display: block;
         }
     }
 }
