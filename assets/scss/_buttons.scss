@@ -55,4 +55,8 @@ button, input[type=submit], .btn {
   @include media("<large") {
     padding: 1em 3em;
   }
+
+    @include media("<small") {
+    padding: 1em;
+  }
 }

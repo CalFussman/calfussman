@@ -206,7 +206,7 @@
         text-align: center;
 
         @include media("<medium") {
-            padding-top: 40%;
+            padding-top: 120px;
         }
 
         #video-play {
@@ -250,9 +250,6 @@
             margin: 0 auto;
             margin-bottom: 100px;
 
-            @include media(">medium") {
-            }
-
             h2 {
                 font-size: 38px;
             }
@@ -260,6 +257,16 @@
             p {
                 font-size: 28px;
             }
+            
+            @include media("<medium") {
+                p {
+                    font-size: 16px;
+                }
+                h2 {
+                    font-size: 28px;
+                }
+            }
+
         }
 
         .break {
@@ -389,4 +396,75 @@
             object-fit: cover;
         }
     }
+}
+
+
+.index-footer {
+  background: url(../images/bg-footer.jpg);
+  background-size: cover;
+
+  .index-footer__container {
+      padding: 32px;
+      text-align: center;
+
+      .cal-outline {
+          height: 200px;
+      }
+
+      .social {
+          height: 200px;
+          padding-top: 80px;
+
+          a:focus {
+              outline: none;
+          }
+
+          img {
+              width: 40px;
+              margin: 0 16px;
+
+              @include media(">medium", "<large") {
+                  margin: 12px;
+              }
+          }
+      }
+
+      .border-right {
+          @include media(">medium") {
+             border-right: 1px solid $white;
+          }
+      }
+
+      .links {
+          text-align: left;
+          margin-left: 40px;
+          margin-top: 22px;
+          
+          @include media("<medium") {
+            text-align: center;
+            margin: 0;
+          }
+
+          li {
+              margin-bottom: 8px;
+
+              @include media("<medium") {
+                  display: inline-block;
+                  padding: 4px 8px;
+              }
+
+            a {
+                color: $white;
+                text-decoration: none;
+                font-size: 20px;
+
+                @include media("<medium") {
+                    font-size: 16px;
+                }
+            }
+
+          }
+      }
+  }
+  
 }
