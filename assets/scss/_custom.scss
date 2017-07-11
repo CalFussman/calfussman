@@ -14,9 +14,14 @@
         float: left;
         padding: 8px 0;
         color: $white;
+        font-size: 2.5em;
 
         @include media("<medium") {
-            font-size: 1.3em
+            font-size: 2.0em
+        }
+
+        @include media("<small") {
+            font-size: 1.5em
         }
     }
 
@@ -24,19 +29,26 @@
         text-decoration: none;
         cursor: pointer;
         color: $white;
+
+        &.book {
+            position: fixed;
+            right: 32px;
+        }
     }
 
     .index-header__book {
         float: right;
-        padding: 24px 16px 14px;
-        background-color: rgba(255, 255, 255, .3);
+        padding: 30px 24px 16px;
+        background-color: rgba(255,255,255,0.3);
         border-radius: 16px;
-        margin-top: -12px;
+        margin-top: -18px;
         letter-spacing: 1px;
+        font-size: 20px;
 
-        @include media("<medium") {
-            padding: 14px 16px 8px;
-            margin-top: -8px;
+        @include media("<small") {
+            padding: 20px 16px 10px;
+            margin-top: -12px;
+            font-size: 16px;
         }
     }
 }
@@ -222,9 +234,10 @@
         h2 {
             color: $white;
             text-transform: uppercase;
-            font-size: 32px;
-            text-shadow: 1px 3px 6px rgba(0,0,0,0.4);
+            font-size: 36px;
+            text-shadow: 4px 4px 8px rgba(0,0,0,0.8);
             letter-spacing: 1px;
+            font-weight: 400;
         }
     }
 }
@@ -251,11 +264,17 @@
             margin-bottom: 100px;
 
             h2 {
-                font-size: 38px;
+                font-size: 56px;
+                font-variant: small-caps;
+                font-weight: 400;
+                margin-bottom: 76px;
             }
             
             p {
                 font-size: 28px;
+                font-family: "FuturaPT";
+                letter-spacing: 1.2px;
+                line-height: 1.8;
             }
             
             @include media("<medium") {
@@ -372,6 +391,7 @@
             .listen {
                 text-align: center;
                 margin-bottom: 32px;
+                text-transform: uppercase;
             }
         }
 
@@ -405,23 +425,23 @@
   background-size: cover;
 
   .index-footer__container {
-      padding: 32px;
+      padding: 24px;
       text-align: center;
 
       .cal-outline {
-          height: 200px;
+          height: 160px;
       }
 
       .social {
-          height: 200px;
-          padding-top: 80px;
+          height: 160px;
+          padding-top: 65px;
 
           a:focus {
               outline: none;
           }
 
           img {
-              width: 40px;
+              width: 35px;
               margin: 0 16px;
 
               @include media(">medium", "<large") {
@@ -439,7 +459,7 @@
       .links {
           text-align: left;
           margin-left: 40px;
-          margin-top: 22px;
+          margin-top: 12px;
           
           @include media("<medium") {
             text-align: center;
@@ -457,7 +477,10 @@
             a {
                 color: $white;
                 text-decoration: none;
-                font-size: 20px;
+                font-size: 18px;
+                font-weight: 300;
+                // text-transform: uppercase;
+                letter-spacing: .8px;
 
                 @include media("<medium") {
                     font-size: 16px;
