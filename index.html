@@ -6,6 +6,9 @@ description: >
     Esquire Magazine, keynote speaker and interviewing consultant.
 keywords: CalFussman,Cal,Fussman,Change,Speaker,Consulting,Interview,Questions,Keynote
 permalink: /
+scripts:
+    - modal-video.js
+    - slick.js
 ---
 
 <section class="section section--full-height section--landing">
@@ -49,11 +52,10 @@ permalink: /
 </section>
 <section class="section section--full-height section--experience">
     <div class="container section--experience__container">
-        <div id="video-play">
+        <div id="video-play" data-video-id="221646209">
             <img class="section--experience__container__play" src="{{ "/assets/images/play-button.png" | relative_url }}" alt="Play Video">
             <h2>Experience it now</h2>
         </div>
-        <!--<iframe src="https://player.vimeo.com/video/221646209" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
     </div>
 </section>
 <section class="section section--full-height section--question">
@@ -62,11 +64,12 @@ permalink: /
             <h2>The Question is the Answer</h2>
             <p>After 20 years of interviewing the world’s most influential people, I’ve learned that whether you want better leadership, stronger relationships or deeper communication, storytelling and curiosity are your keys to success.</p>
         </div>
-        <div class="break">
-            <div class="slider-btn"></div>
-            <div class="slider-btn"></div>
-            <div class="slider-btn"></div>
-            <div class="slider-btn"></div>
+        <div class="book-btn">
+            <a href="#">
+                <p>Book Cal</p>
+                <p class="divider">for</p>
+                <p>Your Event</p>
+            </a>
         </div>
         <div class="grid logos">
             <div class="logo grid__col grid__col--1-of-4 grid__col--m-1-of-2 grid__col--s-1-of-2">
@@ -100,15 +103,19 @@ permalink: /
                 <img src="{{ "/assets/images/logos/ucla.png" | relative_url }}" alt="UCLA">
             </div>
         </div>
-        <div class="book">
-            <a href="#" class="btn btn--negative btn--big">Book Cal to Speak at Your Event</a>
+    </div>
+</section>
+{% comment %}<section class="section section--quotes">
+    <div class="container section--quotes__container">
+        <div class="carousel">
+            <div class="quote"><p>Leadership thrives through great storytelling.</p></div>
+            <div><img src="{{ "/assets/images/carousel/2.jpg" | relative_url }}" alt="Image 2" /></div>
+            <div><img src="{{ "/assets/images/carousel/3.jpg" | relative_url }}" alt="Image 3" /></div>
+            <div><img src="{{ "/assets/images/carousel/4.jpg" | relative_url }}" alt="Image 4" /></div>
+            <div><img src="{{ "/assets/images/carousel/5.jpg" | relative_url }}" alt="Image 5" /></div>
         </div>
     </div>
-</section>
-<section class="section section--quotes">
-    <div class="container section--quotes__container">
-    </div>
-</section>
+</section>{% endcomment %}
 <section class="section section--full-height section--cal-question">
     <div class="container section--cal-question__container">
         <h1>"We literally have people using the term <i>Cal Question</i>.</h1>
