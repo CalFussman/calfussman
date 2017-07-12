@@ -33,6 +33,7 @@
         &.book {
             position: fixed;
             right: 32px;
+            z-index: 10000;
         }
     }
 
@@ -252,7 +253,7 @@
     .section--question__container {
         color: $white;
         padding-top: 200px;
-        padding-bottom: 100px;
+        padding-bottom: 200px;
 
         @include media("<medium") {
             padding-top: 100px;
@@ -320,10 +321,10 @@
     .section--cal-question__container {
         text-align: center;
         color: $white;
-        padding-top: 17%;
+        padding: 20% 0;
 
         @include media("<medium") {
-            padding-top: 25%;
+            padding: 50% 0;
         }
 
         h1 {
@@ -550,14 +551,60 @@
     }
 }
 
-.quote {
-    background-color: #eaeaea;
-    border-radius: $base-border-radius;
-    height: 250px;
-    width: 300px;
+.carousel {
+    position: relative;
+    top: -125px;
 
-    p {
-        font-size: 32px;
-        font-family: BradleyHand;
+    .quote {
+        background-color: #eaeaea;
+        border-radius: 8px;
+        height: 250px;
+        width: 350px;
+        padding: 5% 0;
+        box-shadow: 8px 8px 16px rgba(0,0,0,0.2);
+        display:inline-block;
+        position: absolute;
+        transition: 1s ease;
+
+        p {
+            font-size: 32px;
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &.quote--1 {
+            left: 0;
+        }
+
+        &.quote--2 {
+            left: 15%;
+        }
+
+        &.quote--3 {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 100;
+        }
+
+        &.quote--4 {
+            right: 15%;
+        }
+
+        &.quote--5 {
+            right: 0;
+        }
+
+        &.quote--2, &.quote--4 {
+            transform: scale(.8);
+            z-index: 10;
+        }
+
+        &.quote--1, &.quote--5 {
+            transform: scale(.6);
+            z-index: 1;
+        }
     }
 }
+

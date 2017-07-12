@@ -1,29 +1,13 @@
 // play video
 $('#video-play').modalVideo({channel:'vimeo'});
 
-// initialize carousel
-$('.carousel').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});
+setInterval(slideCarousel, 5000);
+
+function slideCarousel() {
+    $('.carousel').children().each(function(){
+        var classes = $(this).attr('class');
+        var index = classes.split('--')[1];
+        var nextIndex = ++index > 5 ? 1 : index;
+        $(this).removeClass('quote--'+(index-1)).addClass('quote--'+nextIndex);
+    });
+}
