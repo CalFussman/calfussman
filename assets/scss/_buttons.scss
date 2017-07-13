@@ -38,29 +38,38 @@ button, input[type=submit], .btn {
       background-color: $action-color;
     }
   }
-}
 
-.btn--negative {
-  color: $medium-gray;
-  border-color: $medium-gray;
+  &.btn--white {
+    background-color: $white;
+    color: $black;
+    text-transform: uppercase;
+    font-size: .8rem;
 
-  &:hover {
-    color:  $medium-gray;
+    &:hover {
+      background-color: darken($white, 10%);
+    }
+  }
+
+  &.btn--gray {
+    background-color: $medium-gray;
+    color: $white;
+    text-transform: uppercase;
+    font-size: .8rem;
+
+    &:hover {
+      background-color: darken($medium-gray, 10%);
+    }
+  }
+
+  &.btn--md {
+    padding: 1.5em 3em;
+  }
+
+  &.btn--lg {
+    padding: 1.5em 6em;
   }
 }
 
-.btn--md {
-  padding: 1em 2em;
-}
 
-.btn--big {
-  padding: 1em 5em;
 
-  @include media("<large") {
-    padding: 1em 3em;
-  }
 
-    @include media("<small") {
-    padding: 1em;
-  }
-}
