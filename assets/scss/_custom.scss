@@ -585,33 +585,30 @@
 
         &.quote--1 {
             left: 0;
+            transform: scale(.6);
+            z-index: 0;
         }
 
         &.quote--2 {
             left: 15%;
-        }
-
-        &.quote--3 {
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            z-index: 100;
-        }
-
-        &.quote--4 {
-            right: 15%;
-        }
-
-        &.quote--5 {
-            right: 0;
-        }
-
-        &.quote--2, &.quote--4 {
             transform: scale(.8);
             z-index: 10;
         }
 
-        &.quote--1, &.quote--5 {
+        &.quote--3 {
+            left: 35%;
+            z-index: 100;
+            transform: scale(1);
+        }
+
+        &.quote--4 {
+            left: 55%;
+            transform: scale(.8);
+            z-index: 10;
+        }
+
+        &.quote--5 {
+            left: 70%;
             transform: scale(.6);
             z-index: 1;
         }

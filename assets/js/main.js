@@ -21,8 +21,16 @@ setInterval(slideCarousel, 5000);
 function slideCarousel() {
     $('.carousel').children().each(function(){
         var classes = $(this).attr('class');
-        var index = classes.split('--')[1];
+        var index = $(this).data('position');
         var nextIndex = ++index > 5 ? 1 : index;
-        $(this).removeClass('quote--'+(index-1)).addClass('quote--'+nextIndex);
+
+       
+        if (nextIndex === 1) {
+           $(this).attr('class', 'quote quote--1')
+        } else {
+            $(this).addClass('quote--'+nextIndex);
+        }
+
+        $(this).data('position', nextIndex);
     });
 }
