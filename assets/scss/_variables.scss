@@ -33,6 +33,7 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Screen widths
+$xsmall-width: 425px;
 $small-width: 480px;
 $medium-width: 720px;
 $large-width: 1024px;
@@ -75,4 +76,4 @@ $base-duration: 150ms;
 $base-timing: ease;
 
 // Include Media
-$breakpoints: (small: $small-width, medium: $medium-width, large: $large-width, xlarge: $xlarge-width);
+$breakpoints: (xsmall: $xsmall-width, small: $small-width, medium: $medium-width, large: $large-width, xlarge: $xlarge-width);
