@@ -1,3 +1,18 @@
+// navbar responsive
+$('.navbar__icon').click(function() {
+    $('.navbar').toggleClass('navbar--responsive');
+});
+
+// book cal button
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 100) {
+    $('.navbar--book').fadeIn();
+  } else {
+    $('.navbar--book').fadeOut();
+  }
+});
+
 // play video
 $('#video-play').modalVideo({channel:'vimeo'});
 
