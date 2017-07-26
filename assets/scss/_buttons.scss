@@ -50,6 +50,12 @@ button, input[type=submit], .btn {
     }
   }
 
+  &.btn--white-outline {
+    color: $white;
+    background: transparent;
+    border: 1px solid $white;
+  }
+
   &.btn--gray {
     background-color: $medium-gray;
     color: $white;
@@ -59,6 +65,11 @@ button, input[type=submit], .btn {
     &:hover {
       background-color: darken($medium-gray, 10%);
     }
+  }
+
+  &.btn--big {
+    font-size: 22px;
+    font-weight: 300;
   }
 
   &.btn--md {

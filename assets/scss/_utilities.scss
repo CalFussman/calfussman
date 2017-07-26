@@ -15,3 +15,16 @@
     border-radius: 50%;
     background-color: $white;
 }
+
+.hide-on-medium {
+    @include media("<=medium") {
+        display: none !important;
+    }
+}
+
+
+.hide-on-not-medium {
+    @include media(">medium") {
+        display: none !important;
+    }
+}
