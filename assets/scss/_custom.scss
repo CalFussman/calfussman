@@ -57,11 +57,11 @@
 .section--landing {
     background-image: url(../images/bg-index.jpg);
     background-color: $dark-gray;
-    padding-top: 60px;
+    padding-top: 200px;
     position: relative;
 
     .section--landing__heading {
-        color: rgba(255,255,255,0.75);
+        color: rgba(255,255,255,1);
         text-align: center;
         position: absolute;
         right: 15%;
@@ -73,19 +73,20 @@
         }
 
         @include media("<large") {
-            color: rgba(255,255,255,1);
             right: 5%;
         }
 
         @include media("<medium") {
-            top: 12%;
+            top: 33%;
             right: 0;
             left: 0;
-            font-size: 16px;
+            font-size: 20px;
         }
 
         h1 {
             margin-bottom: 28px;
+            font-weight: 300;
+            font-style: italic;
 
             @include media("<medium") {
                 margin-bottom: 14px;
@@ -180,6 +181,7 @@
                 font-weight: 400;
                 font-size: 14px;
                 color: $white;
+                font-style: normal;
             }
 
             .input--signup {
@@ -212,7 +214,11 @@
 .section--experience {
     background-image: url(../images/bg-video.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: right bottom;
+
+    @include media("<medium") {
+        background-position: 90%;
+    }
 
     .section--experience__container {
         padding-top: 15%;
@@ -264,32 +270,38 @@
         .text {
             margin: 0 auto;
             margin-bottom: 150px;
+            max-width: 95%;
+            margin: 0 auto;
 
             h2 {
-                font-size: 72px;
+                font-size: 48px;
                 letter-spacing: 2px;
-                font-variant: small-caps;
-                font-weight: 400;
-                margin-bottom: 76px;
+                font-weight: 700;
+                margin-bottom: 36px;
+                text-align: center;
             }
             
             p {
                 font-size: 28px;
-                font-family: "FuturaPT";
-                letter-spacing: 2.3px;
-                line-height: 1.8;
+                letter-spacing: .2px;
+                line-height: 1.5;
                 font-weight: 300;
+                margin-bottom: 48px;
             }
             
             @include media("<medium") {
                 p {
-                    font-size: 24pxo;
+                    font-size: 22px;
                 }
                 h2 {
-                    font-size: 48px;
+                    font-size: 36px;
                 }
             }
 
+        }
+
+        .book {
+            margin-bottom: 64px;
         }
 
         .break {
@@ -308,6 +320,11 @@
                 margin-bottom: 48px;
                 vertical-align: middle;
                 text-align: center;
+                padding: 0 16px;
+
+                @include media("<medium") {
+                    padding: 0;
+                }
 
                 img {
                     width: 80%;
@@ -514,6 +531,25 @@
           }
       }
   }
+}
+
+.book-btn--circle {
+    background-color: #348ec5;
+    border: 4px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 45px 0;
+
+    color: #fff;
+    text-decoration: none;
+    transition: none;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.3;
 }
 
 .book-btn {

@@ -2,11 +2,20 @@
     background: url(../images/bg-nav.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 8px 16px;
+    padding: 16px 32px;
     box-shadow: 4px 4px 32px $black;
     position: relative;
     z-index: 10;
     transition: all .15s ease;
+
+    &.navbar--transparent {
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        box-shadow: none;
+    }
 
     .navbar__logo {
         text-transform: uppercase;
