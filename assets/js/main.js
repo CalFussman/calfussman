@@ -15,6 +15,9 @@ $(document).scroll(function() {
 
 setInterval(slideCarousel, 5000);
 
+// play video
+$('#video-play').modalVideo({channel:'vimeo'});
+
 function slideCarousel() {
     $('.carousel').children().each(function(){
         var classes = $(this).attr('class');

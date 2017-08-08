@@ -24,6 +24,7 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
+        <script src="{{ "/assets/js/modal-video.js" | relative_url }}"></script>
         {% for script in page.scripts %}
             <script src="{{ "/assets/js/" | append:script | relative_url }}"></script>
         {% endfor %}

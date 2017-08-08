@@ -897,6 +897,108 @@
     }
 }
 
+// speaking page
+.section--speaking-header {
+    background-image: url(../images/speaking-header.jpg);
+    background-position: top center;
+    height: 800px;
+
+    @include media("<medium") {
+        height: 600px;
+        background-position-x: 20%;
+    }
+
+    .play-btn {
+        padding-top: 20vh;
+        text-align: right;
+        opacity: .8;
+
+        img {
+            width: 150px;
+            margin-right: 25vw;
+            margin-bottom: 2em;
+            cursor: pointer;
+        }
+
+        @include media("<medium") {
+            text-align: center;
+            padding-top: 20vh;
+
+            img {
+                margin-right: 0;
+            }
+        }
+    }
+
+    h1 {
+        color: $white;
+        text-align: left;
+        margin-right: 5vw;
+        font-size: 2.8em;
+        font-weight: 300;
+        font-style: italic;
+        text-transform: uppercase;
+        float: right;
+
+        .small {
+            font-size: .8em;
+        }
+
+        @include media("<medium") {
+            height: 600px;
+            text-align: center;
+            margin-right: 0;
+            font-size: 1.8em;
+            float: none;
+        }
+    }
+}
+
+.speaking {
+    .logos {
+        text-align: center;
+        margin: 32px 0;
+
+        .logo-img {
+            display: inline-block;
+            margin: 16px;
+
+            img {
+                cursor: pointer;
+                width: 200px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .logo-instructions {
+        text-align: center;
+        color: $medium-gray;
+        padding-bottom: 32px;
+        border-bottom: 2px solid $black;
+        margin-bottom: 4em;
+        font-weight: 300;
+    }
+
+    .quote {
+        text-align: center;
+        line-height: 2;
+        margin-bottom: 1.5em;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+
+    .author {
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+        margin-bottom: 4em;
+        font-weight: 300;
+        font-size: 1.2em;
+    }
+}
+
+
 // contact page
 .contact {
     .contact__img {
