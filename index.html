@@ -31,7 +31,7 @@ scripts:
                     <p>Email*</p>
                     <input type="email" name="email" id="id_email" class="input input--underline input--signup">
                 </label>
-                <input type="submit" value="Let's Go" class="btn btn--primary">
+                <input type="submit" value="Let's Go" class="btn btn--sm btn--white">
             </div>
         </div>
         
@@ -97,9 +97,8 @@ scripts:
 <section class="section section--full-height section--cal-question">
     <div class="container section--cal-question__container">
         <h1>"We literally have people using the term <i>Cal Question</i>.</h1>
-        <p>'What Cal Question will we use to get to the understanding we need?'</p>
         <p>He has become part of our culture.”</p>
-        <p>Chris Sanders, Facebook</p>
+        <p><i>Chris Sanders, Facebook</i></p>
         <a href="#" class="btn btn--md btn--white">Read More Testimonials</a>
     </div>
 </section>
@@ -109,10 +108,22 @@ scripts:
             <div class="hide-on-not-medium section--podcast__right grid__col grid__col--1-of-2">
                 <img class="section--podcast__img" src="{{ "/assets/images/cal-tim.jpg" | relative_url }}" alt="Cal & Tim">
             </div>
-            <div class="section--podcast__left grid__col grid__col--1-of-2">
-                <p>“When I told my podcast listeners that I was doing a second interview with Cal, dozens replied with some variation of “Please just let Cal talk for 3 hours. I could listen to him tell stories forever.” </p>
-                <p class="right">– Tim Ferriss</p>
-                <div class="listen"><a href="#" class="btn btn--gray btn--lg">Listen</a></div>
+            <div class="grid__col grid__col--1-of-2">
+                <div class="section--podcast__left">
+                    <!-- <p class="as-heard-on">As heard on</p>
+                    <h1 class="tim-ferriss-show">The Tim Ferriss Show</h> -->
+                    <h1 class="title"><a href="http://fourhourworkweek.com/2016/03/11/the-interview-master-cal-fussman-and-the-power-of-listening/">"The Interview Master: Cal Fussman and the Power of Listening”</a></h1>
+                    <p class="subtitle">Listen to what Tim Ferriss’ fans call one of his greatest podcast interviews ever.</p>
+                    <hr class="divider" />
+                    <div class="audio-player">
+                        <audio controls>
+                        <source src="{{ "/assets/audio/tim-ferris.mp3" | relative_url }}" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <p class="quote">“When I told my podcast listeners that I was doing a second interview with Cal, dozens replied with some variation of “Please just let Cal talk for 3 hours. I could listen to him tell stories forever.” </p>
+                    <p class="quote-author">– Tim Ferriss</p>
+                </div>
             </div>
             <div class="hide-on-medium section--podcast__right grid__col grid__col--1-of-2">
                 <img class="section--podcast__img" src="{{ "/assets/images/cal-tim.jpg" | relative_url }}" alt="Cal & Tim">

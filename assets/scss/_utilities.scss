@@ -28,3 +28,16 @@
         display: none !important;
     }
 }
+
+.hide-on-large {
+    @include media("<=large") {
+        display: none !important;
+    }
+}
+
+
+.hide-on-not-large {
+    @include media(">large") {
+        display: none !important;
+    }
+}

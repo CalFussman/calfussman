@@ -13,13 +13,13 @@
             </div>
             <div class="grid__col grid__col--1-of-3">
                 <ul class="links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Speaking</a></li>
+                    <li><a href="{{ 'About' | prepend:site.baseurl }}">About</a></li>
+                    <li><a href="{{ 'Speaking' | prepend:site.baseurl }}">Speaking</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="{{ 'Contact' | prepend:site.baseurl }}">Contact</a></li>
                 </ul>
             </div>
         </div>
-        <p>&copy; Cal Fussman 2017</p>
+        <p class="copyright">&copy; Cal Fussman 2017</p>
     </div>
 </footer>

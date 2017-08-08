@@ -72,6 +72,10 @@ button, input[type=submit], .btn {
     font-weight: 300;
   }
 
+  &.btn--sm {
+    padding: 1em 2em;
+  }
+
   &.btn--md {
     padding: 1.5em 3em;
   }
