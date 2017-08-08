@@ -1,12 +1,12 @@
 <nav class="navbar navbar--transparent">
-    <a href="{{ site.baseurl }}/" class="navbar__logo"><h1><span class="light-weight">Cal</span> Fussman</h1></a>
+    <a href="{{ site.baseurl }}/" class="navbar__logo {% if page.url == "/contact/" %}black{% endif %}"><h1><span class="light-weight">Cal</span> Fussman</h1></a>
 
     <a href="#" class="navbar__icon">&#9776;</a>
-    <ul>
-        <li><a href="{{ site.baseurl }}/about">About</a></li>
-        <li><a href="{{ site.baseurl }}/speaking">Speaking</a></li>
+    <ul {% if page.url == "/contact/" %}class="black"{% endif %}>
+        <li><a {% if page.url == "/about/" %}class="active"{% endif %} href="{{ site.baseurl }}/about">About</a></li>
+        <li><a {% if page.url == "/speaking/" %}class="active"{% endif %} href="{{ site.baseurl }}/speaking">Speaking</a></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+        <li><a {% if page.url == "/contact/" %}class="active"{% endif %} href="{{ site.baseurl }}/contact">Contact</a></li>
     </ul>
 </nav>
 

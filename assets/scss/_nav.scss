@@ -30,6 +30,14 @@
             font-size: 12px;
         }
 
+        &.black {
+            color: $black;
+
+            @include media("<medium") {
+                color: $white;
+            }
+        }
+
         h1 {
             margin-bottom: 0;
             display: inline-block;
@@ -58,6 +66,18 @@
 
         @include media("<medium") {
             display: none;
+        }
+        
+        &.black {
+            li {
+                a {
+                    color: $black;
+
+                    @include media("<medium") {
+                        color: $white;
+                    }
+                }
+            }
         }
 
         li {
