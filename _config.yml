@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Cal Fussman is a New York Times bestselling author, writer-at-large for
   Esquire Magazine, keynote speaker and interviewing consultant.
 keywords: CalFussman,Cal,Fussman,Change,Speaker,Consulting,Interview,Questions,Keynote
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/calfussman" # the subpath of your site, e.g. /blog
 url: "http://www.calfussman.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: calfussman
 
