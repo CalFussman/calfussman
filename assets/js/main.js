@@ -13,9 +13,6 @@ $(document).scroll(function() {
   }
 });
 
-// play video
-$('#video-play').modalVideo({channel:'vimeo'});
-
 setInterval(slideCarousel, 5000);
 
 function slideCarousel() {
@@ -34,3 +31,9 @@ function slideCarousel() {
         $(this).data('position', nextIndex);
     });
 }
+
+
+$('.photo-carousel__nav--left').click(function(e) {
+    console.log('test');
+    $('.photo-carousel').scrollLeft(500);
+});

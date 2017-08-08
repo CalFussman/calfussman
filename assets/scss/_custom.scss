@@ -749,3 +749,141 @@
     }
 }
 
+
+// about page
+.section--about-header {
+    background-image: url(../images/about-header.jpg);
+    background-position: top center;
+    height: 800px;
+
+    @include media("<medium") {
+        height: 600px;
+        background-position-x: 30%;
+    }
+
+    h1 {
+        height: 800px;
+        line-height: 800px;
+        color: $white;
+        text-align: right;
+        margin-right: 15vw;
+        font-size: 5em;
+        font-weight: 300;
+        font-style: italic;
+        text-transform: uppercase;
+
+        @include media("<medium") {
+            height: 600px;
+            line-height: 600px;
+            text-align: center;
+            margin-right: 0;
+            font-size: 4em;
+        }
+    }
+}
+
+.about {
+
+    &.container {
+        padding: 0 36px;
+    }
+
+    .title {
+        text-align: center;
+        padding: 56px 0;
+        margin-bottom: 48px;
+        border-bottom: 1px solid $black;
+
+        h1 {
+            font-weight: 300;
+            margin-bottom: 0;
+            font-size: 2.5em;
+            line-height: 1.5;
+            font-style: italic;
+        }
+    }
+
+    .body-text {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-bottom: 1.5em;
+        line-height: 1.7;
+
+        &.body-text--lg {
+            font-size: 1.7em;
+        }
+    }
+
+    .img-left {
+        width: 45%;
+        max-width: 500px;
+        float: left;
+        margin-right: 32px;
+
+        @include media("<medium") {
+            width: 100%;
+            float: none;
+            display: block;
+            margin: 16px auto;
+        }
+    }
+
+    .img-right {
+        width: 45%;
+        max-width: 500px;
+        float: right;
+        margin-left: 32px;
+
+        @include media("<medium") {
+            width: 100%;
+            float: none;
+            display: block;
+            margin: 16px auto;
+        }
+    }
+
+    .img-center {
+        display: block;
+        width: 100%;
+        margin: 16px auto 32px;
+    }
+}
+
+.photo-carousel {
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 32px;
+    position: relative;
+
+    .photo-carousel__img {
+        height: 400px;
+        width: auto;
+        object-fit: cover;
+        display: inline-block;
+        margin-right: 16px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        @include media("<medium") {
+            width: 100%;
+        }
+    }
+
+    .photo-carousel__nav {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto 16px;
+        cursor: pointer;
+        
+        &.photo-carousel__nav--left {
+            left: 0;
+        }
+        &.photo-carousel__nav--right {
+            right: 0;
+        }
+    }
+}
