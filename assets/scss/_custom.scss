@@ -1168,11 +1168,15 @@
     background: url(../images/testimonials/bg-1.jpg);
     background-size: cover;
     border-bottom: 5px solid rgba(255,255,255,0.8);
+    
+    @include media("<medium") {
+        height: 720px;
+    }
 
     .testimonials__main {
         display: inline-block;
         height: 100%;
-        width: 80vw;
+        width: 78vw;
         padding: 150px 16px;
         text-align: center;
         color: $white;
@@ -1184,7 +1188,8 @@
 
 
         @include media("<medium") {
-            padding: 100px 16px;
+            padding: 50px 16px;
+            height: 520px;
         }
 
         .testimonials__main__note {
@@ -1228,7 +1233,7 @@
     .testimonials__thumbnails {
         display: inline-block;
         width: 20vw;
-        float: left;
+        float: right;
         color: $white;
 
         @include media("<large") {
