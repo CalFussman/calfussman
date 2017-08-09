@@ -100,6 +100,11 @@ $('#submit_form').click(function(e) {
     $('#signup-form').submit();
 });
 
+$('.testimonials__thumbnails__element').click(function(e) {
+    $('.testimonials__main__note.active').hide().removeClass('active');
+    $('#'+$(this).data('id')).show().addClass('active');
+});
+
 function ValidateEmail(email) {  
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {  
         return true;

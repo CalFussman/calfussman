@@ -1162,3 +1162,165 @@
 #signup-form {
     display: none;
 }
+
+.testimonials {
+    height: 600px;
+    background: url(../images/testimonials/bg-1.jpg);
+    background-size: cover;
+    border-bottom: 5px solid rgba(255,255,255,0.8);
+
+    .testimonials__main {
+        display: inline-block;
+        height: 100%;
+        width: 80vw;
+        padding: 150px 16px;
+        text-align: center;
+        color: $white;
+        float: left;
+
+        @include media("<large") {
+            width: 100vw;
+        }
+
+
+        @include media("<medium") {
+            padding: 100px 16px;
+        }
+
+        .testimonials__main__note {
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 2.4em;
+            font-weight: 300;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: .5em;
+
+            @include media("<large") {
+                font-size: 2em;
+            }
+
+            @include media("<medium") {
+                font-size: 1.5em;
+            }
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.2em;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+
+            @include media("<large") {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .testimonials__thumbnails {
+        display: inline-block;
+        width: 20vw;
+        float: left;
+        color: $white;
+
+        @include media("<large") {
+            width: 100vw;
+        }
+
+        ul {
+            list-style: none;
+            
+            @include media("<large") {
+                height: 250px;
+                display: flex;
+            }
+
+            li {
+                color: $white;
+                height: 200px;
+                text-align: center;
+                border-bottom: 5px solid rgba(255,255,255,0.8);
+                background-color: rgba(0, 0, 0, 0.1);
+                transition: all .5s ease;
+                cursor: pointer;
+                padding: 16px;
+                width: 100%;
+
+                @include media("<large") {
+                    display: inline-block;
+                    margin: 0;
+                    flex: 1;
+                    border-right: 5px solid rgba(255,255,255,0.8);
+
+                    &:last-of-type {
+                        border-right: none;
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+
+
+                .wrapper {
+                    display: table;
+                    height: 100%;
+                    width: 100%;
+
+                    h1 {
+                        text-transform: uppercase;
+                        font-weight: 300;
+                        font-size: 1.2em;
+                        display: table-cell;
+                        vertical-align: middle;
+
+                        @include media("<medium") {
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.remodal--keynote {
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-weight: 300;
+        font-size: 1.3em;
+        font-style: italic;
+        margin-bottom: 1em;
+    }
+
+    h2 {
+        text-align: left;
+        margin-bottom: .2em;
+        font-weight: 400;
+        font-size: 1.3em;
+    }
+
+    .takeaways {
+        list-style-type: disc;
+        text-align: left;
+        margin-bottom: 1.3em;
+        margin-left: 1.3em;
+        font-weight: 300;
+    }
+
+    p {
+        text-align: left;
+        font-weight: 300;
+    }
+}
