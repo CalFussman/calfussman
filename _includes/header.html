@@ -5,9 +5,9 @@
     <ul {% if page.url == "/contact/" %}class="black"{% endif %}>
         <li><a {% if page.url == "/about/" %}class="active"{% endif %} href="{{ site.baseurl }}/about">About</a></li>
         <li><a {% if page.url == "/speaking/" %}class="active"{% endif %} href="{{ site.baseurl }}/speaking">Speaking</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="//medium.com/@calfussman">Blog</a></li>
         <li><a {% if page.url == "/contact/" %}class="active"{% endif %} href="{{ site.baseurl }}/contact">Contact</a></li>
     </ul>
 </nav>
 
- <a href="#" class="navbar--book">Book Cal</a> 
+ <a href="{{ site.baseurl }}/contact" class="navbar--book">Book Cal</a> 

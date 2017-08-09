@@ -17,6 +17,7 @@ setInterval(slideCarousel, 5000);
 
 // play video
 $('#video-play').modalVideo({channel:'vimeo'});
+$('#video-play-youtube').modalVideo();
 
 function slideCarousel() {
     $('.carousel').children().each(function(){
@@ -78,3 +79,30 @@ jQuery(document).ready(function ($) {
         moveRight();
     });
 });
+
+$('.logo-quote').click(function(e) {
+    $('#quote').html($(this).data('quote'));
+    $('#author').html($(this).data('author'));
+});
+
+$('#submit_form').click(function(e) {
+    if (!$('#id_firstname').val()) {
+        return;
+    }
+    if (!$('#id_email').val()) {
+        return;
+    }
+    if (!ValidateEmail($('#id_email').val())) {
+        return;
+    }
+    $('#awf_field-92351742').val($('#id_firstname').val());
+    $('#awf_field-92351743').val($('#id_email').val());
+    $('#signup-form').submit();
+});
+
+function ValidateEmail(email) {  
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {  
+        return true;
+    }  
+    return false;  
+} 

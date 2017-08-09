@@ -588,7 +588,16 @@
         padding: 40px 0;
         border: none;
         display: inline-block;
-        margin: 0 16px;
+        margin: 0 32px;
+
+        @include media("<medium") {
+            height: 100px;
+            width: 100px;
+            padding: 34px 0;
+            font-size: 1em;
+            line-height: 1;
+            margin: 0 16px;
+        }
     }
 }
 
@@ -988,8 +997,12 @@
 
             img {
                 cursor: pointer;
-                width: 200px;
+                width: 180px;
                 vertical-align: middle;
+
+                @include media("<medium") {
+                    width: 34vw;
+                }
             }
         }
     }
@@ -1009,6 +1022,10 @@
         margin-bottom: 1.5em;
         font-weight: 300;
         font-size: 1.2em;
+
+        &:before, &:after {
+            content: "\"";
+        }
     }
 
     .author {
@@ -1116,6 +1133,12 @@
             .flag__image img {
                 width: 80px;
             }
+
+            @include media("<small") {
+                &:last-of-type {
+                    margin-bottom: 60px;
+                }
+            }
         }
     }
 
@@ -1134,4 +1157,8 @@
             content: "\"";
         }
     }
+}
+
+#signup-form {
+    display: none;
 }

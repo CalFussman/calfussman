@@ -16,11 +16,11 @@ permalink: /contact/
                 <h1 class="title"><img class="arrow" src="{{ "/assets/images/icon-arrow.svg" | relative_url }}" alt="Arrow">MEET KEVIN "THE MANAGER"</h1>
                 <p class="subtitle">He runs the show here and makes everything come to life. Reach out to him by clicking on one of the two buttons below.</p>
                 <div class="book-buttons">
-                    <a class="book-btn--circle book-btn--sm" href="#">
-                        <span class="heavy-weight">GENERAL<br />INQUIRES</span>
+                    <a class="book-btn--circle book-btn--sm" href="#general-modal">
+                        <span class="heavy-weight">GENERAL<br />INQUIRIES</span>
                     </a>
-                    <a class="book-btn--circle book-btn--sm" href="#">
-                        <span class="heavy-weight">BOOKING<br />INQUIRES</span>
+                    <a class="book-btn--circle book-btn--sm" href="#booking-modal">
+                        <span class="heavy-weight">BOOKING<br />INQUIRIES</span>
                     </a>
                 </div>
                 <h2 class="team-title">The Team</h2>
@@ -31,7 +31,7 @@ permalink: /contact/
                         </div>
                         <div class="flag__body">
                             <p class="name">Gali</p>
-                            <p class="position">The XXXXX</p>
+                            <p class="position">The Day-to-Day</p>
                         </div>
                     </div>
                     <div class="flag">
@@ -49,7 +49,7 @@ permalink: /contact/
                         </div>
                         <div class="flag__body">
                             <p class="name">Mario</p>
-                            <p class="position">The XXXXX</p>
+                            <p class="position">The Director</p>
                         </div>
                     </div>
                     <div class="flag">
@@ -67,7 +67,7 @@ permalink: /contact/
                         </div>
                         <div class="flag__body">
                             <p class="name">Neil</p>
-                            <p class="position">The Developer</p>
+                            <p class="position">The XXXXX</p>
                         </div>
                     </div>
                     <div class="flag">
@@ -76,7 +76,7 @@ permalink: /contact/
                         </div>
                         <div class="flag__body">
                             <p class="name">Alex</p>
-                            <p class="position">The XXXXX</p>
+                            <p class="position">The Consigliere</p>
                         </div>
                     </div>
                 </div>
@@ -84,3 +84,52 @@ permalink: /contact/
         </div>
     </div>
 </section>
+
+<div class="remodal" data-remodal-id="general-modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1>General Inquiries</h1>
+    <form class="contact-form" action="https://formspree.io/kevin@saysomething.la" method="POST">
+        <p>
+            <label for="id_name">Name:</label>
+            <input type="text" name="name" id="id_name">
+        </p>
+        <p>
+            <label for="id_email">Email:</label>
+            <input type="email" name="email" id="id_email">
+        </p>
+        <p>
+            <label for="id_subject">Subject:</label>
+            <input type="text" name="subject" id="id_subject">
+        </p>
+        <p>
+            <label for="id_message">Message:</label>
+            <textarea name="message" id="id_message" placeholder="Drop Cal a line here!" rows="5"></textarea>
+        </p>
+        <p class="center"><input class="btn btn--gray btn--sm" type="submit" value="Submit" /></p>
+    </form>
+</div>
+
+
+<div class="remodal" data-remodal-id="booking-modal">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h1>Booking Inquiries</h1>
+    <form class="contact-form" action="https://formspree.io/kevin@saysomething.la" method="POST">
+        <p>
+            <label for="id_name">Name:</label>
+            <input type="text" name="name" id="id_name">
+        </p>
+        <p>
+            <label for="id_email">Email:</label>
+            <input type="email" name="email" id="id_email">
+        </p>
+        <p>
+            <label for="id_subject">Subject:</label>
+            <input type="text" name="subject" id="id_subject">
+        </p>
+        <p>
+            <label for="id_event_details">Event Details:</label>
+            <textarea name="event_details" id="id_event_details" placeholder="Please include location, budget, and theme of your event." rows="5"></textarea>
+        </p>
+        <p class="center"><input class="btn btn--gray btn--sm" type="submit" value="Submit" /></p>
+    </form>
+</div>
