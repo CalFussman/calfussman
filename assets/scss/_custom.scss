@@ -809,6 +809,10 @@
             font-size: 2.5em;
             line-height: 1.5;
             font-style: italic;
+
+            @include media("<medium") {
+                font-size: 1.8em;
+            }
         }
     }
 
@@ -820,6 +824,10 @@
 
         &.body-text--lg {
             font-size: 1.7em;
+        }
+
+        @include media("<medium") {
+            font-size: 1.2em;
         }
     }
 
@@ -859,26 +867,38 @@
 }
 
 .photo-carousel {
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin-bottom: 32px;
     position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+    ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+
+        li {
+            position: relative;
+            display: block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 600px;
+            height: 400px;
+            text-align: center;
+            line-height: 300px;
+            
+            @include media("<medium") {
+                width: 100vw;
+            }
+        }
+    }
 
     .photo-carousel__img {
-        height: 400px;
-        width: auto;
         object-fit: cover;
-        display: inline-block;
-        margin-right: 16px;
-
-        &:last-of-type {
-            margin-right: 0;
-        }
-
-        @include media("<medium") {
-            width: 100%;
-        }
+        height: 100%;
+        width: 100%;
     }
 
     .photo-carousel__nav {
@@ -887,6 +907,9 @@
         bottom: 0;
         margin: auto 16px;
         cursor: pointer;
+        width: 75px;
+        opacity: .7;
+        z-index: 1;
         
         &.photo-carousel__nav--left {
             left: 0;
