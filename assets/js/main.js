@@ -95,9 +95,10 @@ $('#submit_form').click(function(e) {
     if (!ValidateEmail($('#id_email').val())) {
         return;
     }
-    $('#awf_field-92351742').val($('#id_firstname').val());
-    $('#awf_field-92351743').val($('#id_email').val());
-    $('#signup-form').submit();
+    console.log('no errors');
+    $('#awf_field-85881689-first').val($('#id_firstname').val());
+    $('#awf_field-85881690').val($('#id_email').val());
+    $('#submit-btn').click();
 });
 
 $('.testimonials__thumbnails__element').click(function(e) {
