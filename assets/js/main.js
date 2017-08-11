@@ -96,9 +96,9 @@ $('#submit_form').click(function(e) {
         return;
     }
     console.log('no errors');
-    $('#awf_field-85881689-first').val($('#id_firstname').val());
-    $('#awf_field-85881690').val($('#id_email').val());
-    $('#submit-btn').click();
+    $('#awf_field-92391568').val($('#id_firstname').val());
+    $('#awf_field-92391569').val($('#id_email').val());
+    $('#signup-form').submit();
 });
 
 $('.testimonials__thumbnails__element').click(function(e) {
