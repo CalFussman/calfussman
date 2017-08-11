@@ -96,8 +96,8 @@ $('#submit_form').click(function(e) {
         return;
     }
     console.log('no errors');
-    $('#awf_field-92391568').val($('#id_firstname').val());
-    $('#awf_field-92391569').val($('#id_email').val());
+    $('#awf_field-92395624').val($('#id_firstname').val());
+    $('#awf_field-92395625').val($('#id_email').val());
     $('#signup-form').submit();
 });
 
