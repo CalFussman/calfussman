@@ -987,6 +987,10 @@
 }
 
 .speaking {
+    padding-bottom: 32px;
+    border-bottom: 2px solid $black;
+    margin-bottom: 2em;
+
     .logos {
         text-align: center;
         margin: 32px 0;
@@ -1010,11 +1014,10 @@
     .logo-instructions {
         text-align: center;
         color: $medium-gray;
-        padding-bottom: 32px;
-        border-bottom: 2px solid $black;
-        margin-bottom: 4em;
         font-weight: 300;
+        margin-bottom: 2em;
     }
+    
 
     .quote {
         text-align: center;
