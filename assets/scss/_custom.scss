@@ -1342,3 +1342,12 @@
         font-weight: 300;
     }
 }
+
+.bookingform, .not-found {
+    border-top: 80px solid $black;
+    padding-top: 80px;
+
+    @include media("<medium") {
+        border-top: none;
+    }
+}
