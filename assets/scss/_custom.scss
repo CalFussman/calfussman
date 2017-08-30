@@ -150,6 +150,9 @@
                 font-size: 18px;
             }
 
+            &.email-grab-text {
+                font-size: 17px;
+            }
 
             @include media("<medium") {
                 text-align: center;
