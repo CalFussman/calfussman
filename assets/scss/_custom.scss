@@ -235,11 +235,16 @@
             cursor: pointer;
         }
 
+        p.small {
+            color: $white;
+            text-transform: uppercase;
+        }
+
         .section--experience__container__play {
             width: 500px;
             max-width: 80%;
-            margin-bottom: 32px;
             opacity: .8;
+            margin-bottom: 32px;
         }
 
         h2 {
@@ -948,19 +953,31 @@
         text-align: right;
         opacity: .8;
 
-        img {
-            width: 150px;
-            margin-right: 25vw;
-            margin-bottom: 2em;
-            cursor: pointer;
-        }
-
         @include media("<medium") {
             text-align: center;
             padding-top: 20vh;
+        }
+
+        .play-btn__div {
+            margin-right: 25vw;
+            margin-bottom: 2em;
+            cursor: pointer;
 
             img {
+                width: 150px;
+            }
+            p {
+                color: $white;
+                margin-right: 25px;
+                text-transform: uppercase;
+            }
+
+            @include media("<medium") {
                 margin-right: 0;
+
+                p {
+                    margin-right: 0;
+                }
             }
         }
     }
