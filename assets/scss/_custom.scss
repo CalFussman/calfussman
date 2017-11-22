@@ -1,3 +1,12 @@
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
 .index-header {
     position: absolute;
     left: 0;
@@ -539,7 +548,7 @@
       .links {
           text-align: left;
           margin-left: 40px;
-          margin-top: 12px;
+          margin-top: 0;
           
           @include media("<medium") {
             text-align: center;
